@@ -1,0 +1,55 @@
+@import "@fontsource-variable/plus-jakarta-sans";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Plus Jakarta Sans Variable", "Plus Jakarta Sans", system-ui,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #f5f7fb;
+}
+
+body.dark {
+  background-color: #020617;
+  color: #e2e8f0;
+}
+
+.clickable-table-row {
+  cursor: pointer;
+  transition: background-color 0.08s ease-in-out;
+  user-select: none;
+}
+
+.clickable-table-row button.table-row-action,
+.clickable-table-row .table-row-action button {
+  cursor: pointer;
+}
+
+.clickable-table-row:hover > td {
+  background-color: #f8fafc !important;
+}
+
+body.dark .clickable-table-row:hover > td {
+  background-color: rgba(30, 41, 59, 0.65) !important;
+}
+.clickable-table-row {
+  cursor: pointer;
+  transition: background-color 0.08s ease-in-out;
+}
+
+.clickable-table-row:hover > td {
+  background-color: #f8fafc !important;
+}
+
+body.dark .clickable-table-row:hover > td {
+  background-color: rgba(30, 41, 59, 0.65) !important;
+}
